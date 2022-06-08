@@ -21,8 +21,7 @@ class Student:
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 print(Bob)
 # Expected methods
-peter = Bob.change_name("Peter")
-print(peter)
+Bob.change_name("Peter")
 Bob.change_age(34)
 Bob.add_track("UI/UX, Python")
 Bob.get_score(90)
