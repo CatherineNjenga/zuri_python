@@ -11,7 +11,7 @@ class Student:
         return self.name
 
     def change_age(self, age):
-        self.age = age
+        self.age = int(age)
         return self.age
 
     def add_track(self, tracks):
