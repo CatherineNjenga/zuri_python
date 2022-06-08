@@ -15,17 +15,17 @@ class Student:
         return self.age
 
     def add_track(self, tracks):
-        self.tracks = tracks
+        self.tracks += tracks.split(",")
         return self.tracks
 
-    def get_score(self, score):
-        self.score = score
+    def get_score(self):
         return self.score
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 
 # Expected methods
-Bob.change_name("Peter")
-Bob.change_age(34)
-Bob.add_track("UI/UX, Python")
-Bob.get_score(90)
+print(Bob.change_name("Peter"))
+print(Bob.change_age(34))
+print(Bob.add_track("UI/UX, Python"))
+print(Bob.get_score())
+
