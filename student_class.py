@@ -7,19 +7,23 @@ class Student:
         self.score = score
 
     def change_name(self, name):
-        print(f"{str(self.name)}")
+        self.name = name
+        return self.name
 
     def change_age(self, age):
-        print(f"{int(self.age)}")
+        self.age = age
+        return self.age
 
     def add_track(self, tracks):
-        print(f"{list(self.tracks)}")
+        self.tracks = tracks
+        return self.tracks
 
     def get_score(self, score):
-        print(f"{float(self.score)}")
+        self.score = score
+        return self.score
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
-print(Bob)
+
 # Expected methods
 Bob.change_name("Peter")
 Bob.change_age(34)
