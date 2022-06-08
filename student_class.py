@@ -7,16 +7,16 @@ class Student:
         self.score = score
 
     def change_name(self, name):
-        print(str(name))
+        print(str(self.name))
 
     def change_age(self, age):
-        print(int(age))
+        print(int(self.age))
 
     def add_track(self, tracks):
-        print(list(tracks.split(",")))
+        print(list(self.tracks))
 
     def get_score(self, score):
-        print(float(score))
+        print(float(self.score))
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 print(Bob)
