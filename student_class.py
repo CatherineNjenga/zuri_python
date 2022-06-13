@@ -24,7 +24,7 @@ class Student:
 
     def get_score(self):
         """Return the instance's score"""
-        return self.score
+        return float(self.score)
 
 Bob = Student(name="Bob", age=26, tracks=["FE","BE"],score=20.90)
 
@@ -33,4 +33,3 @@ print(Bob.change_name("Peter"))
 print(Bob.change_age(34))
 print(Bob.add_track("UI/UX, Python"))
 print(Bob.get_score())
-
